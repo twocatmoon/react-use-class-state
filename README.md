@@ -169,4 +169,4 @@ Project Link - [https://github.com/twocatmoon/react-use-class-state](https://git
 [issues-shield]: https://img.shields.io/github/issues/twocatmoon/react-use-class-state.svg?style=for-the-badge
 [issues-url]: https://github.com/twocatmoon/react-use-class-state/issues
 [license-shield]: https://img.shields.io/github/license/twocatmoon/react-use-class-state.svg?style=for-the-badge
-[license-url]: https://github.com/twocatmoon/react-use-class-state/blob/master/LICENSE
+[license-url]: https://github.com/twocatmoon/react-use-class-state/blob/trunk/LICENSE
