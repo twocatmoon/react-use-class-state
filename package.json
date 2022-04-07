@@ -25,9 +25,13 @@
   "keywords": [
     "react",
     "hook",
-    "konami code",
-    "cheat code",
-    "easter egg"
+    "css",
+    "scss",
+    "sass",
+    "className",
+    "class state",
+    "class modifier",
+    "bem"
   ],
   "author": "Two-Cat Moon Digital Media",
   "license": "MIT",
