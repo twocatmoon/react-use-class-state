@@ -15,10 +15,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
-  <h3 align="center">React Konami Code Hook</h3>
+  <h3 align="center">React Class State Hook</h3>
 
   <p align="center">
-    Call a function when a sequence of key presses is detected.
+    Automatically generate CSS class names and modifiers based on your component's state.
     <br />
     <a href="https://twocatmoon.github.io/react-use-class-state"><strong>Explore the docs »</strong></a>
     <br />
@@ -55,13 +55,20 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Use the `useKonamiCode` hook to call a function when a sequence of key presses is detected:
+Use the `useClassState` hook to generate CSS class names and modifiers based on the passed in state:
 
 ```tsx
-useKonamiCode(
-  () => alert('Custom code activated.'), 
-  { sequence: [ 'a', 'b', 'x', 'y' ] }
-)
+const [ isActive, setActive ] = useState(true)
+
+const classState = {
+    'Button': {
+        '--active': isActive,
+        '--disabled': props.disabled,  // false
+        '--color_{value}': props.color // red
+    }
+}
+
+const className = useClassState(classState)
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -70,10 +77,10 @@ useKonamiCode(
 
 ### Built With
 
-* [React.js](https://reactjs.org/)
-* [TypeScript](https://www.typescriptlang.org/)
-* [Vite](https://vitejs.dev/)
-* [TypeDoc](https://typedoc.org/)
+[React.js](https://reactjs.org/)
+[TypeScript](https://www.typescriptlang.org/)
+[Vite](https://vitejs.dev/)
+[TypeDoc](https://typedoc.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -88,7 +95,7 @@ useKonamiCode(
    ```
 2. Include in your project
    ```ts
-   import { useKonamiCode } from '@twocatmoon/react-use-class-state'
+   import { useClassState } from '@twocatmoon/react-use-class-state'
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -145,7 +152,7 @@ Project Link - [https://github.com/twocatmoon/react-use-class-state](https://git
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+[Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

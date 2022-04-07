@@ -1,5 +1,7 @@
 export type ClassStates = {
+    /** Class name */
     [key: string]: { 
+        /** Modifiers ([class]: value) */
         [key: string]: boolean | undefined | null | any
     }
 }
@@ -12,7 +14,7 @@ export type ClassStates = {
  *
  * @example
  * ```tsx
- * const [ isActive, setActive] = useState(true)
+ * const [ isActive, setActive ] = useState(true)
  * 
  * const classState = {
  *     'Button': {

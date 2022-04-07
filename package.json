@@ -2,7 +2,7 @@
   "name": "@twocatmoon/react-use-class-state",
   "version": "0.1.0",
   "private": false,
-  "description": "",
+  "description": "Automatically generate CSS class names and modifiers based on your component's state.",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "exports": {
