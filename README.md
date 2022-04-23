@@ -63,12 +63,13 @@ const [ isActive, setActive ] = useState(true)
 const classState = {
     'Button': {
         '--active': isActive,
-        '--disabled': props.disabled,  // false
-        '--color_{value}': props.color // red
+        '--disabled': props.disabled,  // disabled = false
+        '--color_{value}': props.color // color = 'red'
     }
 }
 
 const className = useClassState(classState)
+// 'Button Button--active Button--color_red'
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
